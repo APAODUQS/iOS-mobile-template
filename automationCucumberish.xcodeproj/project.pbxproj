@@ -1,0 +1,821 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A3EC0629F948616C89C7637 /* Pods_automationCucumberish.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518F99AFDD8A33FA7B58918 /* Pods_automationCucumberish.framework */; };
+		2253597B23C51E58003D2A36 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = 2253597A23C51E58003D2A36 /* Features */; };
+		2253597F23C51EC5003D2A36 /* automationCucumberishCucumberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2253597D23C51EC5003D2A36 /* automationCucumberishCucumberTests.m */; };
+		228C3DE423DA341E0063F23D /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228C3DE323DA341E0063F23D /* Background.swift */; };
+		22E3BC5B23C4E67C004DB49D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3BC5A23C4E67C004DB49D /* AppDelegate.swift */; };
+		22E3BC5F23C4E67C004DB49D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3BC5E23C4E67C004DB49D /* ViewController.swift */; };
+		22E3BC6223C4E67C004DB49D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3BC6023C4E67C004DB49D /* Main.storyboard */; };
+		22E3BC6423C4E67E004DB49D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E3BC6323C4E67E004DB49D /* Assets.xcassets */; };
+		22E3BC6723C4E67E004DB49D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3BC6523C4E67E004DB49D /* LaunchScreen.storyboard */; };
+		22E3BC9423C4ED31004DB49D /* automationCucumberishCucumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3BC9323C4ED31004DB49D /* automationCucumberishCucumberTests.swift */; };
+		5A4DA4AE2408316000A3CD4F /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DA4AD2408316000A3CD4F /* RestAPI.swift */; };
+		5A818A7024AE938900BC0593 /* ConfigStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A818A6E24AE938900BC0593 /* ConfigStub.swift */; };
+		5A818A7124AE938900BC0593 /* StubBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A818A6F24AE938900BC0593 /* StubBuilder.swift */; };
+		5A818A7524AE9A0D00BC0593 /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A818A7324AE9A0D00BC0593 /* Logic.swift */; };
+		5A818A7624AE9A0D00BC0593 /* ExampleSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A818A7424AE9A0D00BC0593 /* ExampleSteps.swift */; };
+		5AB397CB23FD7EA5002CB1C7 /* WiremockManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB397BF23FD7EA5002CB1C7 /* WiremockManagerProtocol.swift */; };
+		5AB397CE23FD7EA5002CB1C7 /* ResponseStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB397C223FD7EA5002CB1C7 /* ResponseStub.swift */; };
+		5AB397D023FD7EA5002CB1C7 /* RequestStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB397C423FD7EA5002CB1C7 /* RequestStub.swift */; };
+		5AB397D123FD7EA5002CB1C7 /* WiremockClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB397C523FD7EA5002CB1C7 /* WiremockClient.swift */; };
+		5AE18AF82416DDDB00068FD7 /* ExternalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE18AF72416DDDA00068FD7 /* ExternalVariables.swift */; };
+		5AE18B132417F10300068FD7 /* EnvironmetVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE18B122417F10300068FD7 /* EnvironmetVar.swift */; };
+		762A790D23DB89A900AB2E9B /* AnyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762A790C23DB89A900AB2E9B /* AnyEntity.swift */; };
+		76DFC49B23D220C50086CABF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DFC49A23D220C50086CABF /* Constants.swift */; };
+		76FE660623D10A2400FFEC2A /* Jenkinsfile in Resources */ = {isa = PBXBuildFile; fileRef = 76FE660423D10A2300FFEC2A /* Jenkinsfile */; };
+		76FE660723D10A2400FFEC2A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 76FE660523D10A2400FFEC2A /* README.md */; };
+		76FE661023D2063800FFEC2A /* wiremock-standalone-2.25.1.jar in Frameworks */ = {isa = PBXBuildFile; fileRef = 76FE660F23D2063800FFEC2A /* wiremock-standalone-2.25.1.jar */; };
+		F66C1AEF22E526427A12406B /* Pods_automationCucumberish_automationCucumberishCucumberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2859A58C714480EC5AEBFA /* Pods_automationCucumberish_automationCucumberishCucumberTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22E3BCA423C4ED32004DB49D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E3BC4F23C4E67C004DB49D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E3BC5623C4E67C004DB49D;
+			remoteInfo = automationCucumberish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2253599523C792A0003D2A36 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2253597A23C51E58003D2A36 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
+		2253597C23C51EC5003D2A36 /* automationCucumberishCucumberTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = automationCucumberishCucumberTests.h; sourceTree = "<group>"; };
+		2253597D23C51EC5003D2A36 /* automationCucumberishCucumberTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = automationCucumberishCucumberTests.m; sourceTree = "<group>"; };
+		2253597E23C51EC5003D2A36 /* automationCucumberishCucumberTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "automationCucumberishCucumberTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		228C3DE323DA341E0063F23D /* Background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
+		22E3BC5723C4E67C004DB49D /* automationCucumberish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = automationCucumberish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E3BC5A23C4E67C004DB49D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22E3BC5E23C4E67C004DB49D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22E3BC6123C4E67C004DB49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22E3BC6323C4E67E004DB49D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E3BC6623C4E67E004DB49D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22E3BC6823C4E67E004DB49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E3BC9123C4ED31004DB49D /* automationCucumberishCucumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = automationCucumberishCucumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E3BC9323C4ED31004DB49D /* automationCucumberishCucumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = automationCucumberishCucumberTests.swift; sourceTree = "<group>"; };
+		22E3BCA323C4ED32004DB49D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4518F99AFDD8A33FA7B58918 /* Pods_automationCucumberish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_automationCucumberish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		526870E0A9FD3546E4E741E8 /* Pods-automationCucumberish-automationCucumberishCucumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automationCucumberish-automationCucumberishCucumberTests.release.xcconfig"; path = "Target Support Files/Pods-automationCucumberish-automationCucumberishCucumberTests/Pods-automationCucumberish-automationCucumberishCucumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A4DA4AD2408316000A3CD4F /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
+		5A818A6E24AE938900BC0593 /* ConfigStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigStub.swift; sourceTree = "<group>"; };
+		5A818A6F24AE938900BC0593 /* StubBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubBuilder.swift; sourceTree = "<group>"; };
+		5A818A7324AE9A0D00BC0593 /* Logic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		5A818A7424AE9A0D00BC0593 /* ExampleSteps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleSteps.swift; sourceTree = "<group>"; };
+		5AB397BF23FD7EA5002CB1C7 /* WiremockManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiremockManagerProtocol.swift; sourceTree = "<group>"; };
+		5AB397C223FD7EA5002CB1C7 /* ResponseStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseStub.swift; sourceTree = "<group>"; };
+		5AB397C423FD7EA5002CB1C7 /* RequestStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestStub.swift; sourceTree = "<group>"; };
+		5AB397C523FD7EA5002CB1C7 /* WiremockClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiremockClient.swift; sourceTree = "<group>"; };
+		5AB3980C23FD9559002CB1C7 /* did_sdk_deviceInfo_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_deviceInfo_iOS.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_deviceInfo_iOS.framework"; sourceTree = "<group>"; };
+		5AB3980D23FD955A002CB1C7 /* didm_auth_sdk_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = didm_auth_sdk_iOS.framework; path = "automationCucumberish/DID-SDK-Libraries/didm_auth_sdk_iOS.framework"; sourceTree = "<group>"; };
+		5AB3980F23FD955A002CB1C7 /* did_sdk_encrypt_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_encrypt_iOS.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_encrypt_iOS.framework"; sourceTree = "<group>"; };
+		5AB3981023FD955A002CB1C7 /* did_sdk_data_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_data_ios.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_data_ios.framework"; sourceTree = "<group>"; };
+		5AB3981123FD955A002CB1C7 /* did_sdk_server_communication_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_server_communication_iOS.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_server_communication_iOS.framework"; sourceTree = "<group>"; };
+		5AB3981223FD955A002CB1C7 /* did_sdk_challengeotp_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_challengeotp_ios.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_challengeotp_ios.framework"; sourceTree = "<group>"; };
+		5AE18AF72416DDDA00068FD7 /* ExternalVariables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalVariables.swift; sourceTree = "<group>"; };
+		5AE18AF92417C9C800068FD7 /* did_sdk_offline_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = did_sdk_offline_ios.framework; path = "automationCucumberish/DID-SDK-Libraries/did_sdk_offline_ios.framework"; sourceTree = "<group>"; };
+		5AE18B122417F10300068FD7 /* EnvironmetVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmetVar.swift; sourceTree = "<group>"; };
+		762A790C23DB89A900AB2E9B /* AnyEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyEntity.swift; sourceTree = "<group>"; };
+		76DFC49A23D220C50086CABF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76FE660423D10A2300FFEC2A /* Jenkinsfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jenkinsfile; sourceTree = "<group>"; };
+		76FE660523D10A2400FFEC2A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		76FE660F23D2063800FFEC2A /* wiremock-standalone-2.25.1.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "wiremock-standalone-2.25.1.jar"; sourceTree = "<group>"; };
+		91A80368C5CC76631BF1B96F /* Pods-automationCucumberish-automationCucumberishCucumberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automationCucumberish-automationCucumberishCucumberTests.debug.xcconfig"; path = "Target Support Files/Pods-automationCucumberish-automationCucumberishCucumberTests/Pods-automationCucumberish-automationCucumberishCucumberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E2859A58C714480EC5AEBFA /* Pods_automationCucumberish_automationCucumberishCucumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_automationCucumberish_automationCucumberishCucumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10A98C761234E6840F7BA16 /* Pods-automationCucumberish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automationCucumberish.debug.xcconfig"; path = "Target Support Files/Pods-automationCucumberish/Pods-automationCucumberish.debug.xcconfig"; sourceTree = "<group>"; };
+		B9A7D19E853E2B0E4B7C82A5 /* Pods-automationCucumberish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-automationCucumberish.release.xcconfig"; path = "Target Support Files/Pods-automationCucumberish/Pods-automationCucumberish.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E3BC5423C4E67C004DB49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FE661023D2063800FFEC2A /* wiremock-standalone-2.25.1.jar in Frameworks */,
+				0A3EC0629F948616C89C7637 /* Pods_automationCucumberish.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3BC8B23C4ED31004DB49D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66C1AEF22E526427A12406B /* Pods_automationCucumberish_automationCucumberishCucumberTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0836CA837683CEB945E7EB43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A10A98C761234E6840F7BA16 /* Pods-automationCucumberish.debug.xcconfig */,
+				B9A7D19E853E2B0E4B7C82A5 /* Pods-automationCucumberish.release.xcconfig */,
+				91A80368C5CC76631BF1B96F /* Pods-automationCucumberish-automationCucumberishCucumberTests.debug.xcconfig */,
+				526870E0A9FD3546E4E741E8 /* Pods-automationCucumberish-automationCucumberishCucumberTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		225A42E823D63E2D00B172C0 /* stubs */ = {
+			isa = PBXGroup;
+			children = (
+				225A42E923D63E2D00B172C0 /* __files */,
+				225A42EA23D63E2D00B172C0 /* mappings */,
+			);
+			path = stubs;
+			sourceTree = "<group>";
+		};
+		225A42E923D63E2D00B172C0 /* __files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = __files;
+			sourceTree = "<group>";
+		};
+		225A42EA23D63E2D00B172C0 /* mappings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mappings;
+			sourceTree = "<group>";
+		};
+		22E3BC4E23C4E67C004DB49D = {
+			isa = PBXGroup;
+			children = (
+				76FE660E23D2063800FFEC2A /* wiremock */,
+				76FE660423D10A2300FFEC2A /* Jenkinsfile */,
+				76FE660523D10A2400FFEC2A /* README.md */,
+				22E3BC5923C4E67C004DB49D /* automationCucumberish */,
+				22E3BC9223C4ED31004DB49D /* automationCucumberishCucumberTests */,
+				22E3BC5823C4E67C004DB49D /* Products */,
+				0836CA837683CEB945E7EB43 /* Pods */,
+				2E36FA62943EDDA913A40BE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22E3BC5823C4E67C004DB49D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22E3BC5723C4E67C004DB49D /* automationCucumberish.app */,
+				22E3BC9123C4ED31004DB49D /* automationCucumberishCucumberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22E3BC5923C4E67C004DB49D /* automationCucumberish */ = {
+			isa = PBXGroup;
+			children = (
+				22E3BC5A23C4E67C004DB49D /* AppDelegate.swift */,
+				22E3BC5E23C4E67C004DB49D /* ViewController.swift */,
+				22E3BC6023C4E67C004DB49D /* Main.storyboard */,
+				22E3BC6323C4E67E004DB49D /* Assets.xcassets */,
+				22E3BC6523C4E67E004DB49D /* LaunchScreen.storyboard */,
+				22E3BC6823C4E67E004DB49D /* Info.plist */,
+			);
+			path = automationCucumberish;
+			sourceTree = "<group>";
+		};
+		22E3BC9223C4ED31004DB49D /* automationCucumberishCucumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				2253597A23C51E58003D2A36 /* Features */,
+				762A790B23DB899C00AB2E9B /* entities */,
+				5AB397BB23FD7EA5002CB1C7 /* stubbing */,
+				76FE660123D106B100FFEC2A /* steps */,
+				22E3BC9323C4ED31004DB49D /* automationCucumberishCucumberTests.swift */,
+				2253597D23C51EC5003D2A36 /* automationCucumberishCucumberTests.m */,
+				2253597E23C51EC5003D2A36 /* automationCucumberishCucumberTests-Bridging-Header.h */,
+				2253597C23C51EC5003D2A36 /* automationCucumberishCucumberTests.h */,
+				22E3BCA323C4ED32004DB49D /* Info.plist */,
+			);
+			path = automationCucumberishCucumberTests;
+			sourceTree = "<group>";
+		};
+		2E36FA62943EDDA913A40BE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AE18AF92417C9C800068FD7 /* did_sdk_offline_ios.framework */,
+				5AB3981223FD955A002CB1C7 /* did_sdk_challengeotp_ios.framework */,
+				5AB3981023FD955A002CB1C7 /* did_sdk_data_ios.framework */,
+				5AB3980C23FD9559002CB1C7 /* did_sdk_deviceInfo_iOS.framework */,
+				5AB3980F23FD955A002CB1C7 /* did_sdk_encrypt_iOS.framework */,
+				5AB3981123FD955A002CB1C7 /* did_sdk_server_communication_iOS.framework */,
+				5AB3980D23FD955A002CB1C7 /* didm_auth_sdk_iOS.framework */,
+				4518F99AFDD8A33FA7B58918 /* Pods_automationCucumberish.framework */,
+				9E2859A58C714480EC5AEBFA /* Pods_automationCucumberish_automationCucumberishCucumberTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A818A6D24AE938900BC0593 /* anyStub */ = {
+			isa = PBXGroup;
+			children = (
+				5A818A6E24AE938900BC0593 /* ConfigStub.swift */,
+				5A818A6F24AE938900BC0593 /* StubBuilder.swift */,
+			);
+			path = anyStub;
+			sourceTree = "<group>";
+		};
+		5A818A7224AE9A0D00BC0593 /* exampleSteps */ = {
+			isa = PBXGroup;
+			children = (
+				5A818A7324AE9A0D00BC0593 /* Logic.swift */,
+				5A818A7424AE9A0D00BC0593 /* ExampleSteps.swift */,
+			);
+			path = exampleSteps;
+			sourceTree = "<group>";
+		};
+		5AB397BB23FD7EA5002CB1C7 /* stubbing */ = {
+			isa = PBXGroup;
+			children = (
+				5AE18B142417F17C00068FD7 /* config */,
+				5A818A6D24AE938900BC0593 /* anyStub */,
+			);
+			path = stubbing;
+			sourceTree = "<group>";
+		};
+		5AE18B142417F17C00068FD7 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5AB397C523FD7EA5002CB1C7 /* WiremockClient.swift */,
+				5AB397BF23FD7EA5002CB1C7 /* WiremockManagerProtocol.swift */,
+				5AB397C223FD7EA5002CB1C7 /* ResponseStub.swift */,
+				5AB397C423FD7EA5002CB1C7 /* RequestStub.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		5AE18B152417F19500068FD7 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DA4AD2408316000A3CD4F /* RestAPI.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		5AE18B162417F1C100068FD7 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				5AE18B122417F10300068FD7 /* EnvironmetVar.swift */,
+				76DFC49A23D220C50086CABF /* Constants.swift */,
+				5AE18AF72416DDDA00068FD7 /* ExternalVariables.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		762A790B23DB899C00AB2E9B /* entities */ = {
+			isa = PBXGroup;
+			children = (
+				762A790C23DB89A900AB2E9B /* AnyEntity.swift */,
+			);
+			path = entities;
+			sourceTree = "<group>";
+		};
+		76FE660123D106B100FFEC2A /* steps */ = {
+			isa = PBXGroup;
+			children = (
+				228C3DE323DA341E0063F23D /* Background.swift */,
+				5AE18B162417F1C100068FD7 /* config */,
+				5AE18B152417F19500068FD7 /* helper */,
+				5A818A7224AE9A0D00BC0593 /* exampleSteps */,
+			);
+			path = steps;
+			sourceTree = "<group>";
+		};
+		76FE660E23D2063800FFEC2A /* wiremock */ = {
+			isa = PBXGroup;
+			children = (
+				225A42E823D63E2D00B172C0 /* stubs */,
+				76FE660F23D2063800FFEC2A /* wiremock-standalone-2.25.1.jar */,
+			);
+			path = wiremock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22E3BC5623C4E67C004DB49D /* automationCucumberish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E3BC8123C4E67F004DB49D /* Build configuration list for PBXNativeTarget "automationCucumberish" */;
+			buildPhases = (
+				2611C0D797E8908BDE94029B /* [CP] Check Pods Manifest.lock */,
+				22E3BC5323C4E67C004DB49D /* Sources */,
+				22E3BC5423C4E67C004DB49D /* Frameworks */,
+				22E3BC5523C4E67C004DB49D /* Resources */,
+				5AE18AF62416DCC400068FD7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = automationCucumberish;
+			productName = automationCucumberish;
+			productReference = 22E3BC5723C4E67C004DB49D /* automationCucumberish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22E3BC9023C4ED31004DB49D /* automationCucumberishCucumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E3BCA623C4ED32004DB49D /* Build configuration list for PBXNativeTarget "automationCucumberishCucumberTests" */;
+			buildPhases = (
+				2DD03BC0ACA3C50E15576CC1 /* [CP] Check Pods Manifest.lock */,
+				22E3BC8A23C4ED31004DB49D /* Sources */,
+				22E3BC8B23C4ED31004DB49D /* Frameworks */,
+				22E3BC8C23C4ED31004DB49D /* Resources */,
+				2253599523C792A0003D2A36 /* CopyFiles */,
+				CB46AFEAA90663B36E506B96 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E3BCA523C4ED32004DB49D /* PBXTargetDependency */,
+			);
+			name = automationCucumberishCucumberTests;
+			productName = automationCucumberishCucumberTests;
+			productReference = 22E3BC9123C4ED31004DB49D /* automationCucumberishCucumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22E3BC4F23C4E67C004DB49D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Automation;
+				TargetAttributes = {
+					22E3BC5623C4E67C004DB49D = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					22E3BC9023C4ED31004DB49D = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 22E3BC5623C4E67C004DB49D;
+					};
+				};
+			};
+			buildConfigurationList = 22E3BC5223C4E67C004DB49D /* Build configuration list for PBXProject "automationCucumberish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22E3BC4E23C4E67C004DB49D;
+			productRefGroup = 22E3BC5823C4E67C004DB49D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22E3BC5623C4E67C004DB49D /* automationCucumberish */,
+				22E3BC9023C4ED31004DB49D /* automationCucumberishCucumberTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22E3BC5523C4E67C004DB49D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3BC6723C4E67E004DB49D /* LaunchScreen.storyboard in Resources */,
+				22E3BC6423C4E67E004DB49D /* Assets.xcassets in Resources */,
+				22E3BC6223C4E67C004DB49D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3BC8C23C4ED31004DB49D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76FE660723D10A2400FFEC2A /* README.md in Resources */,
+				2253597B23C51E58003D2A36 /* Features in Resources */,
+				76FE660623D10A2400FFEC2A /* Jenkinsfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2611C0D797E8908BDE94029B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-automationCucumberish-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DD03BC0ACA3C50E15576CC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-automationCucumberish-automationCucumberishCucumberTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AE18AF62416DCC400068FD7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo 'class ExternalVariables { let GET_IP_SERVER = \"'`ipconfig getifaddr ${IP_INTERFACE}`'\"}' > automationCucumberishCucumberTests/steps/config/ExternalVariables.swift \n";
+		};
+		CB46AFEAA90663B36E506B96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-automationCucumberish-automationCucumberishCucumberTests/Pods-automationCucumberish-automationCucumberishCucumberTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-automationCucumberish-automationCucumberishCucumberTests/Pods-automationCucumberish-automationCucumberishCucumberTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-automationCucumberish-automationCucumberishCucumberTests/Pods-automationCucumberish-automationCucumberishCucumberTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E3BC5323C4E67C004DB49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3BC5F23C4E67C004DB49D /* ViewController.swift in Sources */,
+				22E3BC5B23C4E67C004DB49D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3BC8A23C4ED31004DB49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE18AF82416DDDB00068FD7 /* ExternalVariables.swift in Sources */,
+				5A818A7524AE9A0D00BC0593 /* Logic.swift in Sources */,
+				762A790D23DB89A900AB2E9B /* AnyEntity.swift in Sources */,
+				76DFC49B23D220C50086CABF /* Constants.swift in Sources */,
+				2253597F23C51EC5003D2A36 /* automationCucumberishCucumberTests.m in Sources */,
+				5AB397CB23FD7EA5002CB1C7 /* WiremockManagerProtocol.swift in Sources */,
+				5AB397D023FD7EA5002CB1C7 /* RequestStub.swift in Sources */,
+				5A4DA4AE2408316000A3CD4F /* RestAPI.swift in Sources */,
+				5A818A7624AE9A0D00BC0593 /* ExampleSteps.swift in Sources */,
+				5AB397D123FD7EA5002CB1C7 /* WiremockClient.swift in Sources */,
+				22E3BC9423C4ED31004DB49D /* automationCucumberishCucumberTests.swift in Sources */,
+				5AB397CE23FD7EA5002CB1C7 /* ResponseStub.swift in Sources */,
+				5AE18B132417F10300068FD7 /* EnvironmetVar.swift in Sources */,
+				5A818A7124AE938900BC0593 /* StubBuilder.swift in Sources */,
+				228C3DE423DA341E0063F23D /* Background.swift in Sources */,
+				5A818A7024AE938900BC0593 /* ConfigStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E3BCA523C4ED32004DB49D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E3BC5623C4E67C004DB49D /* automationCucumberish */;
+			targetProxy = 22E3BCA423C4ED32004DB49D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22E3BC6023C4E67C004DB49D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E3BC6123C4E67C004DB49D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22E3BC6523C4E67E004DB49D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E3BC6623C4E67E004DB49D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22E3BC7F23C4E67F004DB49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22E3BC8023C4E67F004DB49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22E3BC8223C4E67F004DB49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A10A98C761234E6840F7BA16 /* Pods-automationCucumberish.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = automationCucumberish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22E3BC8323C4E67F004DB49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9A7D19E853E2B0E4B7C82A5 /* Pods-automationCucumberish.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = automationCucumberish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.automation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22E3BCA723C4ED32004DB49D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A80368C5CC76631BF1B96F /* Pods-automationCucumberish-automationCucumberishCucumberTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/automationCucumberish/DID-SDK-Libraries",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SRC_ROOT=@\\\"$(SRCROOT)\\\"",
+				);
+				INFOPLIST_FILE = automationCucumberishCucumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgate.automationCucumberishCucumberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SRC_ROOT = "@\\\"$(SRCROOT)\\\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "automationCucumberishCucumberTests/automationCucumberishCucumberTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = automationCucumberish;
+			};
+			name = Debug;
+		};
+		22E3BCA823C4ED32004DB49D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 526870E0A9FD3546E4E741E8 /* Pods-automationCucumberish-automationCucumberishCucumberTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MBXZA6Z65J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/automationCucumberish/DID-SDK-Libraries",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"SRC_ROOT=@\\\"$(SRCROOT)\\\"",
+				);
+				INFOPLIST_FILE = automationCucumberishCucumberTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.appgate.automationCucumberishCucumberTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "automationCucumberishCucumberTests/automationCucumberishCucumberTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = automationCucumberish;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22E3BC5223C4E67C004DB49D /* Build configuration list for PBXProject "automationCucumberish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3BC7F23C4E67F004DB49D /* Debug */,
+				22E3BC8023C4E67F004DB49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E3BC8123C4E67F004DB49D /* Build configuration list for PBXNativeTarget "automationCucumberish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3BC8223C4E67F004DB49D /* Debug */,
+				22E3BC8323C4E67F004DB49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E3BCA623C4ED32004DB49D /* Build configuration list for PBXNativeTarget "automationCucumberishCucumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3BCA723C4ED32004DB49D /* Debug */,
+				22E3BCA823C4ED32004DB49D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22E3BC4F23C4E67C004DB49D /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_automationCucumberish_automationCucumberishCucumberTests {
+  umbrella header "Pods-automationCucumberish-automationCucumberishCucumberTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
