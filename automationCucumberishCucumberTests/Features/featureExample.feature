@@ -6,8 +6,8 @@ Background: Create Mocks
     | y |
 
 Scenario Outline: Change the OTP lifetime for the same DetectID with <value> seconds
-  Given a number <number_1>
-  And a number <number_2>
+  Given a frist number <number_1>
+  And a second number <number_2>
   When the operation is a sum
   Then the result is <result>
   Examples:

@@ -11,14 +11,14 @@ class ExampleSteps {
     
     func example(){
         
-        Given("a number (\\d+)") { (args, userInfo) -> Void in
+        Given("a frist number (\\d+)") { (args, userInfo) -> Void in
             number1 = Int((args?[0])!)
-            NSLog("AUTOMATION - Given a number \(number1!)")
+            NSLog("AUTOMATION - Given a first number \(number1!)")
         }
         
-        Given("a number (\\d+)") { (args, userInfo) -> Void in
+        Given("a second number (\\d+)") { (args, userInfo) -> Void in
             number2 = Int((args?[0])!)
-            NSLog("AUTOMATION - Given a number \(number2!)")
+            NSLog("AUTOMATION - Given a second number \(number2!)")
         }
         
         When("the operation is a (.*)") { (args, userInfo) -> Void in
